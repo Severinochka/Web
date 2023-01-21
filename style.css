@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    min-width: 250px;
+    font-family: canada-type-gibson, sans-serif;
+}
+
+h2 {
+    margin: 5px;
+    color: #5c4fb3;
+    font-weight: 1000;
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color:black;
+}
+
+.CRUD a {
+    font-size: 24px;
+}
+
+.CRUD a:hover {
+    font-size: 26px;
+    transition: .1s;
+}
+
+.CRUD {
+    margin-top : 20px;
+    text-align: center;
+}
+
+a:hover {
+    color: #5c4fb3;
+}
+
+ul > li:hover  {
+    color: black
+}
+
+.head:hover {
+    color: black;
+}
+
+
+
+
+    /* Включите отступ и границу в общую ширину и высоту элемента */
+* {
+    box-sizing: border-box;
+}
+
+/* Удалите поля и отступы из списка */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Стиль элементов списка */
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+
+    /* сделайте элементы списка просматриваемыми */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Установите для всех нечетных элементов списка другой цвет (полосы зебры) */
+/*ul li:nth-child(odd) {*/
+/*    background: #f9f9f9;*/
+/*}*/
+
+/* Более темный фон-цвет при наведении курсора */
+ul li:hover {
+    background: #ddd;
+}
+
+/* При нажатии на кнопку добавить цвет фона и вычеркнуть текст */
+ul li.checked {
+    background: #888;
+    color: #fff;
+}
+
+/*!* Добавить отметку "проверено" при нажатии на нее *!*/
+/*ul li.checked::before {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    border-color: #fff;*/
+/*    border-style: solid;*/
+/*    border-width: 0 2px 2px 0;*/
+/*    top: 10px;*/
+/*    left: 16px;*/
+/*    transform: rotate(45deg);*/
+/*    height: 15px;*/
+/*    width: 7px;*/
+/*}*/
+
+
+/*!* Стиль кнопки закрытия *!*/
+/*.close {*/
+/*    position: absolute;*/
+/*    right: 0;*/
+/*    top: 0;*/
+/*    padding: 12px 16px 12px 16px;*/
+/*}*/
+
+/*.close:hover {*/
+/*    background-color: #f44336;*/
+/*    color: white;*/
+/*}*/
+
+/* Стиль заголовка */
+.header {
+    background-color: #beb8e0;
+    padding: 30px 40px;
+    color: #5c4fb3;
+    text-align: center;
+}
+
+/* Очистить поплавки после заголовка */
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Стиль ввода */
+input {
+    margin: 0;
+    border: none;
+    border-radius: 16px;
+    width: 100%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    color: black;
+}
+
+/* Стиль кнопки "Добавить" */
+.addBtn {
+    background-color: #483d8b;
+    border: solid transparent;
+    border-radius: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+    /*font-family: din-round, sans-serif;*/
+    font: normal small-caps 120%/110% sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    line-height: 15px;
+    outline: none;
+    overflow: visible;
+    padding: 12px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 150px;
+    margin: 20px 0 0;
+}
+
+.addBtn:after {
+    background-clip: padding-box;
+    background-color: #5c4fb3;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.addBtn {
+    background: #5c4fb3;
+    box-shadow: 0px 5px #483d8b, 0px 10px 10px rgba(0,0,0,0.25);
+    z-index: -1;
+}
+
+/*.addBtn:hover {*/
+/*    background-color: #bbb;*/
+/*}*/
+.addBtn:hover {
+    transform: translateY(5px);
+    box-shadow: 0px 0px transparent, 0px 5px 10px rgba(0,0,0,0.25);
+}
+
+.addBtn:focus {
+    user-select: auto;
+    outline: none;
+}
+
+.addBtn:disabled {
+    cursor: auto;
+}
+
+#myUL li a {
+    display: inline-block;
+}
+
+#myUL li a:first-child {
+    margin-right: 40px;
+}
+
+#myUL li a:nth-child(3){
+    position: absolute;
+    right: 100px;
+}
+
+#myUL li a:last-child{
+    float: right;
+    color: #5c4fb3;
+}
+
+#myDIV input{
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+#myDIV button {
+    float:right;
+}
