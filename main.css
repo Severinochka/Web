@@ -1,0 +1,126 @@
+
+#schedule_table,
+.table_form {
+    font: normal small-caps 120%/105% sans-serif;
+    border-collapse: collapse;
+    width:100%
+}
+
+.task_table {
+    font: normal small-caps 120%/105% sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.task_table td,
+.task_table th,
+.table_form td,
+.table_form th,
+#schedule_table td,
+#schedule_table th {
+    padding: 8px;
+}
+
+.task_table {
+    text-align: center;
+}
+
+.task_table th {
+    width: 30%;
+    text-align: center;
+}
+
+.task_table tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.button {
+    background-color: #483d8b;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: din-round, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    display: inline-block;
+    line-height: 20px;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 200px;
+    margin: 20px 0 0;
+}
+
+.button:after {
+    background-clip: padding-box;
+    background-color: #5c4fb3;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.button {
+    background: #5c4fb3;
+    box-shadow: 0px 5px #483d8b, 0px 10px 10px rgba(0,0,0,0.25);
+    z-index: -1;
+}
+
+button:hover {
+    transform: translateY(5px);
+    box-shadow: 0px 0px transparent, 0px 5px 10px rgba(0,0,0,0.25);
+}
+
+.button:focus {
+    user-select: auto;
+    outline: none;
+}
+
+.button:disabled {
+    cursor: auto;
+}
+form.container {
+    position: absolute;
+    top: 102px;
+    width: 450px;
+}
+
+input {
+
+    margin-bottom: 20px;
+    margin-top: 5px;
+    width: 100%;
+    /*width: 600px;*/
+    height: 50px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #7d70c2;
+    border-radius: 4px;
+    background-color: #beb8e0;
+    font-size: 16px;
+    resize: none;
+
+}
